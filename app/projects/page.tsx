@@ -4,73 +4,80 @@ import { Github, ExternalLink, Star, Sparkles, Scissors, Paintbrush } from "luci
 import Image from "next/image"
 import Link from "next/link"
 
+import curie from "@/app/assets/curieosity.png"
+import ee from "@/app/assets/ee.png"
+import coral from "@/app/assets/coralguard.png"
+import mejuri from "@/app/assets/mejurix.png"
+import rapid from "@/app/assets/rr.png"
+import restoria from "@/app/assets/restoria.png"
+
 export default function Projects() {
   const projects = [
     {
-      title: "Sketchy E-Commerce",
-      description: "A hand-drawn aesthetic online store that feels like shopping in an artist's studio ✏️",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Canvas API"],
-      github: "https://github.com/yourusername/sketchy-ecommerce",
-      demo: "https://sketchy-ecommerce-demo.com",
+      title: "Restoria",
+      description: "A Video Game about helping the environment by restoring nature 🌱",
+      image: restoria,
+      technologies: ["Godot", "Pixel Art", "Shaders"],
+      github: "https://github.com/ScriptKitKat/game",
+      demo: "https://scriptkitkat.itch.io/restoria",
+      category: "Game",
+      featured: true,
+      sketch: "🎮",
+    },
+    {
+      title: "CoralGuard",
+      description: "A web app that helps protect coral reefs with through early bleaching dectection 🐠",
+      image: coral,
+      technologies: ["Flask", "Python", "Collab Notebook", "Machine Learning"],
+      github: "https://github.com/ScriptKitKat/Coral",
+      demo: "https://devpost.com/software/coralguard-52pxvk",
       category: "Web App",
       featured: true,
-      sketch: "🛍️",
+      sketch: "🐟",
     },
     {
-      title: "Craft Task Manager",
-      description: "A productivity app that looks like it's made from paper and craft supplies 📝",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "Node.js", "MongoDB", "Paper.js"],
-      github: "https://github.com/yourusername/craft-tasks",
-      demo: "https://craft-tasks-demo.com",
-      category: "Web App",
-      featured: true,
-      sketch: "📋",
-    },
-    {
-      title: "Doodle Weather",
-      description: "Weather forecasts presented with hand-drawn illustrations and sketchy animations ☀️",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Vue.js", "OpenWeather API", "SVG Animations"],
-      github: "https://github.com/yourusername/doodle-weather",
-      demo: "https://doodle-weather-demo.com",
-      category: "Web App",
+      title: "Mejurix",
+      description: "Website for a start-up that helps summarize medical litgiation using AI 🤖",
+      image: mejuri,
+      technologies: ["TypeScript", "Next", "Tailwind CSS", "Node.js"],
+      github: "https://github.com/ScriptKitKat/mejuri",
+      demo: "https://mejuri-eight.vercel.app/",
+      category: "Website",
       featured: false,
-      sketch: "🌤️",
+      sketch: "⚖️",
     },
     {
-      title: "Artisan Portfolio",
-      description: "A portfolio template for artists and makers with authentic craft aesthetics 🎨",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Gatsby", "Contentful", "CSS Animations"],
-      github: "https://github.com/yourusername/artisan-portfolio",
-      demo: "https://artisan-portfolio-demo.com",
-      category: "Template",
+      title: "Rapid Removal",
+      description: "Website for a waste removal company with a modern, sleek style️",
+      image: rapid,
+      technologies: ["TypeScript", "Next", "Tailwind CSS", "Node.js", "Figma"],
+      github: "https://github.com/ScriptKitKat/rapid-removal",
+      demo: "https://rapid-removal.vercel.app/",
+      category: "Website",
       featured: false,
-      sketch: "🖼️",
+      sketch: "🗑️",
     },
     {
-      title: "Mindful Sketches",
-      description: "A meditation app with hand-drawn mandalas and calming sketch animations 🧘‍♀️",
-      image: "/placeholder.svg?height=300&width=400",
+      title: "Extended Essay",
+      description: "Essay on the mathematics behind Neural Networks",
+      image: ee,
       technologies: ["React Native", "Expo", "SVG", "Audio API"],
-      github: "https://github.com/yourusername/mindful-sketches",
-      demo: "https://mindful-sketches-demo.com",
+      github: "https://github.com/ScriptKitKat/Extended-Essay",
+      demo: "",
       category: "Mobile App",
       featured: true,
-      sketch: "🕯️",
+      sketch: "✍️",
     },
     {
-      title: "Craft Blog Theme",
-      description: "A WordPress theme that looks like pages from an artist's journal 📖",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["WordPress", "PHP", "SCSS", "jQuery"],
-      github: "https://github.com/yourusername/craft-blog",
-      demo: "https://craft-blog-demo.com",
-      category: "Theme",
+      title: "CURIEosity",
+      description: "Website for a student-led non-profit that promotes STEM education",
+      image: curie,
+      technologies: ["TypeScript", "Next", "Tailwind CSS", "Node.js"],
+      github: "https://github.com/ScriptKitKat/CURIEosity-website",
+      demo: "https://www.curieosity.org/",
+      category: "Website",
       featured: false,
-      sketch: "📝",
+      sketch: "🤝",
     },
   ]
 
@@ -88,7 +95,7 @@ export default function Projects() {
 
         <div className="flex justify-center items-center space-x-3 text-xl mb-8">
           <Paintbrush className="w-5 h-5 text-amber-600 wiggle-draw" />
-          <span className="handwritten text-amber-800">Sketching ideas into digital reality</span>
+          <span className="handwritten text-amber-800">Creating with excellence</span>
           <Scissors className="w-5 h-5 text-amber-600 wiggle-draw" />
         </div>
 
@@ -185,9 +192,9 @@ export default function Projects() {
       </section>
 
       {/* Other Projects */}
-      <section>
+      <section className="mb-16">
         <h2 className="handwritten text-4xl font-bold text-center mb-12 text-amber-900 relative">
-          More Creative Work
+          Websites I've built
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-56 h-1">
             <svg viewBox="0 0 224 8" className="w-full h-full">
               <path d="M10,4 Q56,1 112,4 T214,4" stroke="#D2691E" strokeWidth="2" fill="none" />
@@ -281,6 +288,12 @@ export default function Projects() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+          <h2 className="handwritten text-4xl font-bold text-center mb-12 text-amber-900 relative">
+            Like my work? I also run a website business!
+          </h2>
       </section>
     </div>
   )

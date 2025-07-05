@@ -1,24 +1,24 @@
 import { Badge } from "@/components/ui/badge"
-import { Camera, Music, Gamepad2, BookOpen, Palette, Code, Heart, Coffee, Cat, Paintbrush } from "lucide-react"
+import { Camera, Music, Gamepad2, BookOpen, Palette, Code, Heart, Coffee, Book } from "lucide-react"
 
 export default function About() {
   const hobbies = [
     {
-      name: "Photography",
+      name: "Birdwatching",
       icon: Camera,
-      description: "Capturing life's beautiful moments 📸",
-      doodle: "📷",
+      description: "Identifying feathered friends in their natural habitat 🌲",
+      doodle: "🐦",
     },
     {
-      name: "Music",
+      name: "Vlogging",
       icon: Music,
-      description: "Strumming melodies & humming tunes 🎵",
-      doodle: "🎸",
+      description: "Sharing my adventures through video storytelling 🎥",
+      doodle: "🎬",
     },
     {
       name: "Gaming",
       icon: Gamepad2,
-      description: "Cozy indie adventures & puzzle games 🎮",
+      description: "Cozy indie adventures & Solitaire 🎮",
       doodle: "🕹️",
     },
     {
@@ -26,12 +26,6 @@ export default function About() {
       icon: BookOpen,
       description: "Getting lost in fantasy worlds 📚",
       doodle: "📖",
-    },
-    {
-      name: "Art & Crafts",
-      icon: Paintbrush,
-      description: "Sketching, painting & making things ✂️",
-      doodle: "🎨",
     },
     {
       name: "Coding",
@@ -88,18 +82,17 @@ export default function About() {
             <h2 className="handwritten text-3xl font-bold text-amber-900 mb-6 ml-8">My Story</h2>
             <div className="space-y-4 text-amber-800 leading-relaxed">
               <p>
-                Hey there! I'm a creative soul who believes that the best designs come from the heart. My journey
-                started with doodling in the margins of notebooks and has evolved into crafting digital experiences that
-                bring joy to people's lives.
+                Hey there! I’m a builder, birdwatcher, and big believer that technology can (and should) make the world a better place. 
+                My journey started with curiosity—tinkering with code, wondering how things worked, and dreaming up ways to solve problems
+                with tech.
               </p>
               <p>
-                When I'm not coding, you'll find me with a sketchbook in hand, capturing ideas as they come, or curled
-                up with my cat and a good book. I believe that creativity flows best when we stay curious and keep our
-                hands busy making things.
+                When I'm not coding, you'll find me with birdwatching, set on identifying birbs, or vlogging
+                fun videos. I believe that excellence comes with breaks too.
               </p>
               <p>
-                I'm passionate about creating inclusive, accessible, and delightful digital experiences. Every project
-                is an opportunity to solve problems creatively and make someone's day a little brighter! ✨
+                I'm passionate about creating inclusive and excellent digital experiences. Every project
+                is an opportunity to solve problems well and make someone's day a little brighter! ✨
               </p>
             </div>
 
@@ -186,26 +179,26 @@ export default function About() {
       {/* Fun Facts with paper texture */}
       <div className="craft-card p-8 sketch-shadow mt-16 relative">
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
-          <Cat className="w-8 h-8 text-amber-600 wiggle-draw" />
+          <Book className="w-8 h-8 text-amber-600 wiggle-draw" />
         </div>
 
         <h2 className="handwritten text-3xl font-bold text-amber-900 text-center mb-8 mt-4">
-          Random Fun Facts About Me
+          My favorite Bible Verses
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 text-center">
           {[
             {
-              emoji: "🌱",
-              fact: "I talk to my 47 houseplants daily (they're great listeners!)",
+              emoji: "📖",
+              fact: "Work willingily at whatever you do, as though you were working for the Lord rather than for people. - Colossians 3:23",
             },
             {
-              emoji: "☕",
-              fact: "My code quality is directly proportional to my coffee intake",
+              emoji: "🙏",
+              fact: "Seek the Kingdom of God above all else, and live righteously, and he will give you everything you need. - Matthew 6:33",
             },
             {
-              emoji: "🎨",
-              fact: "I collect vintage art supplies but use digital tools for work",
+              emoji: "💡",
+              fact: "Your word is a lamp to guide my feet and a light for my path. - Psalm 119:105",
             },
           ].map((item, index) => (
             <div key={index} className="relative">

@@ -154,9 +154,8 @@ export default function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "hello@yourname.com", color: "bg-pink-100" },
-                { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", color: "bg-blue-100" },
-                { icon: MapPin, label: "Location", value: "Your City, Country", color: "bg-green-100" },
+                { icon: Mail, label: "Email", value: "priscilla.ye@gmail.com", color: "bg-pink-100" },
+                { icon: MapPin, label: "Location", value: "TX, USA", color: "bg-green-100" },
               ].map((contact, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <div
@@ -179,10 +178,10 @@ export default function Contact() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: Github, label: "GitHub", href: "https://github.com/yourusername" },
-                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-                { icon: Instagram, label: "Instagram", href: "https://instagram.com/yourusername" },
-                { icon: Youtube, label: "YouTube", href: "https://youtube.com/@yourusername" },
+                { icon: Github, label: "GitHub", href: "https://github.com/ScriptKitKat" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/priscillaye" },
+                { icon: Instagram, label: "Instagram", href: "https://instagram.com/priscillatheye" },
+                { icon: Youtube, label: "YouTube", href: "https://youtube.com/@itsprye" },
               ].map((social, index) => (
                 <Button
                   key={index}
@@ -219,7 +218,7 @@ export default function Contact() {
                 className="sketch-button handwritten bg-amber-300 text-amber-900 border-2 border-amber-800 hover:bg-amber-400"
                 asChild
               >
-                <Link href="mailto:hello@yourname.com?subject=Coffee Chat">Let's Chat!</Link>
+                <Link href="mailto:priscilla.ye@gmail.com?subject=Coffee Chat">Let's Chat!</Link>
               </Button>
             </div>
 

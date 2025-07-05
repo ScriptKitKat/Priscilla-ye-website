@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Github, Linkedin, Instagram, Youtube, Palette, Star, Coffee, Pencil, Brush } from "lucide-react"
+import { Github, Linkedin, Instagram, Youtube, Computer, Star, Coffee, Pencil, Brush } from "lucide-react"
 import Link from "next/link"
+
+import me from "@/app/assets/image.png"
+
 
 export default function Home() {
   return (
@@ -26,32 +29,31 @@ export default function Home() {
           <div className="absolute bottom-40 right-32 w-16 h-1 bg-amber-500 transform -rotate-6 opacity-40"></div>
 
           <div className="relative">
-            <Avatar className="w-36 h-36 mx-auto mb-8 sketch-shadow border-4 border-amber-800 bg-amber-50">
-              <AvatarImage src="/placeholder.svg?height=144&width=144" alt="Your Name" />
-              <AvatarFallback className="text-4xl handwritten bg-amber-100 text-amber-900">YN</AvatarFallback>
-            </Avatar>
-
-            {/* Sketchy arrow pointing to avatar */}
-            <div className="absolute -right-16 top-20 hidden lg:block xl:-right-20">
-              <div className="handwritten text-amber-700 text-lg transform rotate-12">That's me! →</div>
+            <div className="flex flex-col items-center mb-8">
+              <div className="flex items-center">
+                <Avatar className="w-36 h-36 sketch-shadow border-4 border-amber-800 bg-amber-50">
+                  <AvatarImage src={me.src} alt="Priscilla" />
+                  <AvatarFallback className="text-4xl handwritten bg-amber-100 text-amber-900">PY</AvatarFallback>
+                </Avatar>
+              </div>
             </div>
           </div>
 
           <h1 className="handwritten text-5xl md:text-7xl font-bold mb-6 text-amber-900 relative">
             <span className="relative">
-              Hey there!
+              Hello there!
               <div className="absolute -bottom-2 left-0 right-0 h-3 bg-yellow-200 opacity-50 transform -rotate-1"></div>
             </span>
             <br />
             <span className="text-amber-700 relative">
-              I'm Your Name
+              I'm Priscilla Ye
               <div className="absolute -bottom-1 left-0 right-0 h-2 bg-amber-200 opacity-60 transform rotate-1"></div>
             </span>
           </h1>
 
           <div className="relative max-w-3xl mx-auto mb-12">
             <p className="text-xl md:text-2xl text-amber-800 leading-relaxed handwritten font-medium">
-              ✏️ Creative developer & designer who loves sketching ideas into digital reality ✨
+              ✏️ Creative developer & designer who loves creating excellence ✨
             </p>
             {/* Underline doodle */}
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-64 h-1">
@@ -68,7 +70,7 @@ export default function Home() {
               asChild
             >
               <Link href="/projects">
-                <Palette className="w-5 h-5 mr-2" />
+                <Computer className="w-5 h-5 mr-2" />
                 Check Out My Work
               </Link>
             </Button>
@@ -88,10 +90,10 @@ export default function Home() {
           {/* Social Links with sketchy style */}
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-              { icon: Instagram, href: "https://instagram.com/yourusername", label: "Instagram" },
-              { icon: Youtube, href: "https://youtube.com/@yourusername", label: "YouTube" },
+              { icon: Github, href: "https://github.com/ScriptKitKat/", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/priscillaye/", label: "LinkedIn" },
+              { icon: Instagram, href: "https://www.instagram.com/priscillatheye/", label: "Instagram" },
+              { icon: Youtube, href: "https://www.youtube.com/@itsprye", label: "YouTube" },
             ].map((social, index) => (
               <div key={index} className="relative group">
                 <Button

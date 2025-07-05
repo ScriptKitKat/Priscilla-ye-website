@@ -12,7 +12,7 @@ export function Navigation() {
     { href: "/", label: "Home", icon: Home },
     { href: "/about", label: "About", icon: User },
     { href: "/projects", label: "Projects", icon: Palette },
-    { href: "/experience", label: "Experience", icon: Briefcase },
+    // { href: "/experience", label: "Experience", icon: Briefcase },
     { href: "/contact", label: "Contact", icon: Mail },
   ]
 
@@ -27,7 +27,7 @@ export function Navigation() {
               <div className="absolute -top-1 -left-1 w-3 h-3 border-l-2 border-t-2 border-amber-600 transform -rotate-12"></div>
               <div className="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-amber-600 transform rotate-12"></div>
             </div>
-            <span className="handwritten text-2xl font-bold text-amber-900 doodle-line">Your Name</span>
+            <span className="handwritten text-2xl font-bold text-amber-900 doodle-line">Priscilla Ye</span>
           </Link>
 
           <div className="hidden md:flex space-x-2">

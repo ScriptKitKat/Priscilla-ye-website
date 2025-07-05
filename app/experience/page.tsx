@@ -49,11 +49,10 @@ export default function Experience() {
 
   const education = [
     {
-      title: "Bachelor of Fine Arts in Digital Media",
-      company: "Creative Arts University",
-      period: "2015 - 2019",
+      title: "Bachelor of Science in Computer Science and Business",
+      company: "University of Texas at Austin",
       description:
-        "Studied the intersection of art, technology, and human experience. Specialized in interactive media and user experience design.",
+        "Studied the intersection of technology and business. Specialized in interactive media and user experience design.",
       achievements: [
         "Graduated Magna Cum Laude",
         "Senior thesis on accessible web design",
@@ -74,7 +73,7 @@ export default function Experience() {
     <div className="container mx-auto px-4 py-12">
       {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="font-fredoka text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+        <h1 className="handwritten text-5xl md:text-6xl font-bold mb-5 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
           My Journey
         </h1>
         <div className="flex justify-center items-center space-x-2 text-xl mb-8">
