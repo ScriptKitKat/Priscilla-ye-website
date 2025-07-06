@@ -192,7 +192,7 @@ export default function Projects() {
       </section>
 
       {/* Other Projects */}
-      <section className="mb-16">
+      <section className="mb-16" id="websites">
         <h2 className="handwritten text-4xl font-bold text-center mb-12 text-amber-900 relative">
           Websites I've built
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-56 h-1">
