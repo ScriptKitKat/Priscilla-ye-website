@@ -17,9 +17,8 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-  title: "Your Name - Artsy Portfolio",
-  description: "A sketchy, crafty personal portfolio",
-    generator: 'v0.dev'
+  title: "Priscilla Ye's Portfolio",
+  description: "A personal portfolio"
 }
 
 export default function RootLayout({
